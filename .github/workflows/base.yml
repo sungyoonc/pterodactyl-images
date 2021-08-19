@@ -8,11 +8,6 @@ on:
       - dev-images
     paths:
       - arm64/**
-  push:
-    branches:
-      - dev-images
-    paths:
-      - .github/workflows/**
   pull_request:
     branches:
       - main
