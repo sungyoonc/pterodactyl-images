@@ -8,7 +8,17 @@ on:
       - dev-images
     paths:
       - arm64/**
-      
+  push:
+    branches:
+      - dev-images
+    paths:
+      - .github/workflows/**
+  pull_request:
+    branches:
+      - main
+    types:
+      - synchronize
+
 jobs:
   push:
     name: "arm64:os_${{ matrix.tag }}"

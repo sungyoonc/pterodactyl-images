@@ -2,7 +2,7 @@ FROM        --platform=linux/arm64 debian:buster-slim
 
 LABEL       author="winter" maintainer="winterolym@protonmail.com"
 
-LABEL       org.opencontainers.image.source="https://github.com/winterolym/pterodactyl-arm64-images"
+LABEL       org.opencontainers.image.source="https://github.com/winterolym/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apt update && apt upgrade -y \
