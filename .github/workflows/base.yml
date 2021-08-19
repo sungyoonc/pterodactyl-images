@@ -2,8 +2,6 @@ name: build base images
 
 on:
   schedule:
-    branches:
-      - main
     - cron: "0 0 * * 1"
   push:
     branches:
