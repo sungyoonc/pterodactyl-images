@@ -6,8 +6,8 @@ LABEL       org.opencontainers.image.source="https://github.com/winterolym/ptero
 LABEL       org.opencontainers.image.licenses=MIT
 
 RUN         apt update && apt upgrade -y \
-				&& apt -y install ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential \
-				&& useradd -m -d /home/container -s /bin/bash container
+						&& apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+						&& useradd -d /home/container -m container
 
 USER        container
 ENV         USER=container HOME=/home/container
